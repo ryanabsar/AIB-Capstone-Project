@@ -15,3 +15,30 @@ Group D
 - Laotan Faji,
 - Nishita Badola,
 - Ryan Primadi
+
+## Environment Setup
+
+To set up the environment locally:
+
+1. **Create a virtual environment**:
+    ```bash
+    python -m venv venv
+    ```
+
+2. **Activate the environment**:
+    - On **Windows**:
+        ```bash
+        .\venv\Scripts\activate
+        ```
+    - On **Mac/Linux**:
+        ```bash
+        source venv/bin/activate
+        ```
+
+3. **Install dependencies**:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+## License
+This project is intended for academic purposes only.  
