@@ -1,14 +1,3 @@
-Your README is already very strong — just a few tweaks will make it even more polished and professional. Here's the improved version with:
-
-* Minor grammar/style refinements
-* A new **"🚀 Usage"** section
-* Cleaner formatting in the collapsible folder tree
-* Updated team list formatting
-* Consistent line spacing
-
----
-
-````markdown
 # AIB Capstone Project – Group D  
 **Imperial College Business School**  
 **MSc Business Analytics**
@@ -168,4 +157,3 @@ Then restart your terminal and re-activate the virtual environment.
 
 **This project is intended for academic purposes only.**
 
-```
