@@ -13,3 +13,4 @@ scipy
 numpy
 seaborn
 ipykernel
+jupyterlab
