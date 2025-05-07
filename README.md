@@ -24,63 +24,38 @@ Before proceeding, ensure you have **Python 3.11** installed. You can install it
 
 ### ✅ Option A: Using Conda (Recommended)
 
-1. **Create a new environment with Python 3.11**:
+1. **Create a new environment with Python 3.11**  
+   `conda create -n aib-project python=3.11`  
+   `conda activate aib-project`
 
-   ```bash
-   conda create -n aib-project python=3.11
-   conda activate aib-project
-````
-
-2. **Install dependencies**:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
+2. **Install dependencies**  
+   `pip install -r requirements.txt`
 
 ---
 
 ### ✅ Option B: Using Standard Python
 
-1. **Download and install Python 3.11** from
-   [https://www.python.org/downloads/release/python-3110/](https://www.python.org/downloads/release/python-3110/)
+1. **Download and install Python 3.11** from  
+   https://www.python.org/downloads/release/python-3110/
 
-2. **Create a virtual environment**:
+2. **Create a virtual environment**  
+   `python3.11 -m venv venv`
 
-   ```bash
-   python3.11 -m venv venv
-   ```
+3. **Activate the environment**  
+   On **Windows**: `.\venv\Scripts\activate`  
+   On **macOS/Linux**: `source venv/bin/activate`
 
-3. **Activate the environment**:
-
-   * On **Windows**:
-
-     ```bash
-     .\venv\Scripts\activate
-     ```
-   * On **macOS/Linux**:
-
-     ```bash
-     source venv/bin/activate
-     ```
-
-4. **Install dependencies**:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
+4. **Install dependencies**  
+   `pip install -r requirements.txt`
 
 ---
 
 ## 🚀 Usage
 
-After activating the environment and installing dependencies, run the main notebook with:
+After activating the environment and installing dependencies, run the main notebook:
 
-```bash
-cd 02_notebooks
-jupyter notebook 99_main_analysis.ipynb
-```
-
-You can also explore other notebooks by week under the same directory.
+`cd 02_notebooks`  
+`jupyter notebook 99_main_analysis.ipynb`
 
 ---
 
@@ -116,37 +91,27 @@ project-root/
 
 ## 🛠 macOS Users – Fix for XGBoost `libomp.dylib` or 32-bit Error
 
-If you encounter this error when importing XGBoost:
-
-> `Library not loaded: @rpath/libomp.dylib`
+If you encounter this error when importing XGBoost:  
+`Library not loaded: @rpath/libomp.dylib`
 
 You’ll need to install the **OpenMP runtime** (`libomp`) on macOS:
 
 ### ✅ Step 1: Install `libomp` using Homebrew
 
-If you don’t have Homebrew installed:
+If you don’t have Homebrew installed:  
+`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 
-```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
-
-Then:
-
-```bash
-brew install libomp
-```
+Then:  
+`brew install libomp`
 
 ### ✅ Step 2: Link the library path (if needed)
 
-If errors persist:
-
-```bash
-export DYLD_LIBRARY_PATH="/opt/homebrew/opt/libomp/lib:$DYLD_LIBRARY_PATH"
-```
+If errors persist:  
+`export DYLD_LIBRARY_PATH="/opt/homebrew/opt/libomp/lib:$DYLD_LIBRARY_PATH"`
 
 To make this permanent, add the line to your shell config:
 
-* Zsh: `~/.zshrc`
+* Zsh: `~/.zshrc`  
 * Bash: `~/.bash_profile` or `~/.bashrc`
 
 Then restart your terminal and re-activate the virtual environment.
@@ -156,4 +121,3 @@ Then restart your terminal and re-activate the virtual environment.
 ## 📄 License
 
 **This project is intended for academic purposes only.**
-
