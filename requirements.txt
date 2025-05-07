@@ -1,16 +1,29 @@
+# Core scientific stack
+numpy
+scipy
 pandas
+
+# Visualization
 matplotlib
+seaborn
 plotly
+
+
+# Statistical modeling / ML
 statsmodels
-requests
-demjson3
-beautifulsoup4
-fake-useragent
-tqdm
 scikit-learn
 xgboost
-scipy
-numpy
-seaborn
+
+# Web scraping / APIs
+requests
+beautifulsoup4
+fake-useragent
+demjson3
+
+# Progress tracking
+tqdm
+
+# Jupyter-related
 ipykernel
 jupyterlab
+ipywidgets

@@ -69,8 +69,7 @@ project-root/
 │   └── processed/
 │
 ├── 02_notebooks/             # Jupyter notebooks
-│   ├── 01_week1_intro.ipynb
-│   ├── 02_week2_analysis.ipynb
+│   ├── 01_class_materials      # Class materials notebook
 │   └── 99_main_analysis.ipynb  # Final or summary notebook
 │
 ├── 03_scripts/               # Reusable Python scripts
