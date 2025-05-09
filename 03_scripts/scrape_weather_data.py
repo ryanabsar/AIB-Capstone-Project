@@ -158,5 +158,6 @@ if __name__ == "__main__":
     # Example usage
     # weather_scraper(start_str='2017-01-01', end_str='2017-01-31')
     start_str = '2017-01-01'
-    end_str = '2018-01-01'
-    weather_scraper(start_str=start_str,end_str=end_str,csv_path='./01_datasets/raw/kirkwall_weather.csv')
+    end_str = '2017-01-01'
+    data = weather_scraper(start_str=start_str,end_str=end_str)
+    print(data.shape)
