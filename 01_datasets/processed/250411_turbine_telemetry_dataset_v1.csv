@@ -1,4 +1,4 @@
-Timestamp,Power_kw,Setpoint_kw,Baseline_wind_ms,Scrape_wind_ms,scraped_interpolated,baseline_interpolated,Scrape_linear_scaled_wind_ms,Final_wind_ms,Wind_data_source,Predicted_power_kw,Final_power_kw,Power_data_source,Energy_kwh
+Timestamp,turbine_power_kw,turbine_setpoint_kw,wind_baseline_ms,wind_scraped_ms,wind_scraped_is_interpolated,wind_baseline_is_interpolated,wind_scraped_scaled_ms,wind_final_ms,wind_final_source,turbine_power_predicted_kw,turbine_power_final_kw,turbine_power_final_source,turbine_energy_kwh
 2017-01-01 00:00:00,889.7666666666667,900.0,13.82,10.28,True,False,15.871209726467027,13.82,baseline,861.539132627834,889.7666666666667,baseline,444.8833333333333
 2017-01-01 00:30:00,893.2666666666667,900.0,16.106666666666666,10.28,False,False,15.871209726467027,16.106666666666666,baseline,896.3057042725981,893.2666666666667,baseline,446.6333333333333
 2017-01-01 01:00:00,897.6333333333333,900.0,16.38,9.39,False,False,14.691604345350365,16.38,baseline,897.3704952587169,897.6333333333333,baseline,448.81666666666666
